@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/TCPConn.h
+string
+-
+netinet/in.h
+-
+
+/home/claire/AFIT-CSCE689-HW1-S/src/TCPConn.cpp
+TCPConn.h
+/home/claire/AFIT-CSCE689-HW1-S/src/TCPConn.h
+sstream
+-
+unistd.h
+-
+stdio.h
+-
+sys/socket.h
+-
+stdlib.h
+-
+netinet/in.h
+-
+bits/unique_ptr.h
+-
+
