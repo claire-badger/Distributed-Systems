@@ -6,25 +6,19 @@
 
 #IncludeRegexTransform: 
 
-../include/Server.h
-
 ../include/TCPConn.h
 string
 -
 netinet/in.h
 -
-
-../include/TCPServer.h
-netinet/in.h
+vector
 -
-Server.h
-../include/Server.h
 
-/home/claire/AFIT-CSCE689-HW1-S/src/TCPServer.cpp
-TCPServer.h
-/home/claire/AFIT-CSCE689-HW1-S/src/TCPServer.h
+/home/claire/AFIT-CSCE689-HW1-S/src/TCPConn.cpp
 TCPConn.h
 /home/claire/AFIT-CSCE689-HW1-S/src/TCPConn.h
+sstream
+-
 unistd.h
 -
 stdio.h
@@ -35,16 +29,12 @@ stdlib.h
 -
 netinet/in.h
 -
-string.h
--
-vector
+bits/unique_ptr.h
 -
 fcntl.h
 -
-bits/unique_ptr.h
+cstring
 -
-arpa/inet.h
--
-iostream
+vector
 -
 

@@ -1,0 +1,8 @@
+TCPServer.o: TCPServer.cpp /usr/include/stdc-predef.h \
+ ../include/TCPServer.h ../include/Server.h
+
+/usr/include/stdc-predef.h:
+
+../include/TCPServer.h:
+
+../include/Server.h:

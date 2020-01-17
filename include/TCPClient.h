@@ -1,7 +1,11 @@
 #ifndef TCPCLIENT_H
 #define TCPCLIENT_H
 
-#include <string>
+#include <stdio.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+#include <string.h>
 #include "Client.h"
 
 // The amount to read in before we send a packet
@@ -20,7 +24,8 @@ public:
    virtual void closeConn();
 
 private:
-
+    int client_fd;
+    struct sockaddr_in serv_addr;
 };
 
 
