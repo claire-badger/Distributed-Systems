@@ -104,7 +104,7 @@ am_tcpclient_OBJECTS = client_main.$(OBJEXT) Client.$(OBJEXT) \
 tcpclient_OBJECTS = $(am_tcpclient_OBJECTS)
 tcpclient_LDADD = $(LDADD)
 am_tcpserver_OBJECTS = server_main.$(OBJEXT) Server.$(OBJEXT) \
-	TCPServer.$(OBJEXT) strfuncts.$(OBJEXT)
+	TCPConn.$(OBJEXT) TCPServer.$(OBJEXT) strfuncts.$(OBJEXT)
 tcpserver_OBJECTS = $(am_tcpserver_OBJECTS)
 tcpserver_LDADD = $(LDADD)
 AM_V_P = $(am__v_P_@AM_V@)
@@ -257,7 +257,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-tcpserver_SOURCES = server_main.cpp Server.cpp TCPServer.cpp strfuncts.cpp
+tcpserver_SOURCES = server_main.cpp Server.cpp TCPConn.cpp TCPServer.cpp strfuncts.cpp
 # tcpserver_LDFLAGS = -largon2
 tcpclient_SOURCES = client_main.cpp Client.cpp TCPClient.cpp strfuncts.cpp
 all: all-am
@@ -353,6 +353,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/Client.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/Server.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/TCPClient.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/TCPConn.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/TCPServer.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/client_main.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/server_main.Po@am__quote@

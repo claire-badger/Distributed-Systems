@@ -72,13 +72,6 @@ void TCPClient::handleConnection() {
     char *buffer[1024];
     char *serverbuffer[1024];
 
-    //check first value read from server
-    int valread = read(client_fd, serverbuffer, 1024);
-
-    if (valread == 0){
-        exit(0);}
-    else{
-
         while (1) {
 
             //set fd_sets for select()
@@ -108,7 +101,6 @@ void TCPClient::handleConnection() {
                 if (n < 0){
                     printf("ERROR writing to socket");
                 }
-            }
         }
     }
 }

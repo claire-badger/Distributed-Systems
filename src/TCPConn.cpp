@@ -87,8 +87,8 @@ bool TCPConn::handleConnection(){
        } else if ("passwd" == command) {
            char const *msg = "TBD\n";
            sendText(msg);
-       } else if ("exit\n" == command) {
-           char const *msg = "Shutting down...\n";
+       } else if ("exit" == command) {
+           char const *msg = "Shutting down... (takes 2 enters to close, sorry)\n";
            sendText(msg);
            disconnect();
            return false;
@@ -96,6 +96,7 @@ bool TCPConn::handleConnection(){
            sendText("Command not found. write 'menu' for options\n");
        }
    }
+
     return true;
 }
 

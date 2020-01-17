@@ -1,7 +1,7 @@
 bin_PROGRAMS = tcpserver tcpclient
 
 
-tcpserver_SOURCES = server_main.cpp Server.cpp TCPServer.cpp strfuncts.cpp
+tcpserver_SOURCES = server_main.cpp Server.cpp TCPConn.cpp TCPServer.cpp strfuncts.cpp
 # tcpserver_LDFLAGS = -largon2
 
 tcpclient_SOURCES = client_main.cpp Client.cpp TCPClient.cpp strfuncts.cpp
